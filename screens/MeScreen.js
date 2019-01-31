@@ -1,13 +1,19 @@
 import React from 'react';
+import { Container, Header, Left, Body, Right, Button, Icon, Title } from 'native-base';
+import { View ,Text} from 'react-native';
 
 export default class MeScreen extends React.Component {
-  static navigationOptions = {
+    static navigationOptions = {
     title: 'ME',
   };
 
   render() {
-    /* Go ahead and delete ExpoConfigView and replace it with your
-     * content, we just wanted to give you a quick view of your config */
-    return null;
+    return (
+      
+      <View>
+      
+        <Text>Hello</Text>
+      </View>
+    );
   }
 }

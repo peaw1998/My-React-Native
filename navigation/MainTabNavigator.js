@@ -1,6 +1,7 @@
 import React from 'react';
 import { Platform } from 'react-native';
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
+import { Ionicons } from '@expo/vector-icons';
 
 import TabBarIcon from '../components/TabBarIcon';
 
@@ -18,36 +19,37 @@ HomeStack.navigationOptions = {
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? 'ios-options' : 'md-link'}
+      name={Platform.OS === 'ios' ? 'ios-book' : 'md-book'}
     />
   ),
 };
 
-const LinksStack = createStackNavigator({
+const ExerciseStack = createStackNavigator({
   Links: ExerciseScreen,
 });
 
-LinksStack.navigationOptions = {
-  tabBarLabel: 'Links',
+ExerciseStack.navigationOptions = {
+  tabBarLabel: 'EXERCISE',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? 'ios-link' : 'md-link'}
+      name={Platform.OS === 'ios' ? 'ios-create' : 'md-create'}
     />
   ),
 };
 
-const SettingsStack = createStackNavigator({
+const MeStack = createStackNavigator({
   Settings: MeScreen,
 });
 
-SettingsStack.navigationOptions = {
-  tabBarLabel: 'Me',
+MeStack.navigationOptions = {
+  tabBarLabel: 'ME',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? 'ios-options' : 'md-options'}
+      name={Platform.OS === 'ios' ? 'ios-contact' : 'md-contact'}
     />
+    
   ),
 };
 
@@ -56,7 +58,7 @@ SettingsStack.navigationOptions = {
 
 export default createBottomTabNavigator({
   HomeStack,
-  LinksStack,
-  SettingsStack,
+  ExerciseStack,
+  MeStack,
   
 });

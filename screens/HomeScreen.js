@@ -20,6 +20,7 @@ export default class HomeScreen extends React.Component {
 
   render() {
     return (
+      
       <View style={styles.container}>
        <LearnScreen/>
       </View>
