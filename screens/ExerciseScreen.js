@@ -1,5 +1,6 @@
 import React from 'react';
-import { ScrollView, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
+import Lesson from "../components/Lesson"
 
 
 export default class ExerciseScreen extends React.Component {
@@ -9,11 +10,10 @@ export default class ExerciseScreen extends React.Component {
 
   render() {
     return (
-      <ScrollView style={styles.container}>
-        {/* Go ahead and delete ExpoLinksView and replace it with your
-           * content, we just wanted to provide you with some helpful links */}
+      <View style={styles.container}>
         
-      </ScrollView>
+        <Lesson />
+      </View>
     );
   }
 }

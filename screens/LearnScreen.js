@@ -1,10 +1,23 @@
 import React, { Component } from 'react';
-import { Container, Header, Content, Button, Text } from 'native-base';
+import { View, Body, StyleSheet, Header } from 'react-native';
+import CardSubjectI from "../components/CardSubjectI"
+
 
 
 export default class LearnScreen extends Component {
-  
+
   render() {
-    return null;
+    return (
+      <View style={styles.container}>
+        <CardSubjectI />
+        
+      </View>
+    );
   }
 }
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
+});
