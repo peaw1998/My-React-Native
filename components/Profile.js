@@ -1,17 +1,26 @@
 import React, { Component } from 'react';
-import { Container, Header, Content, Thumbnail, Text, H2 } from 'native-base';
+import { Container, Header, Left, Body, Content, Thumbnail, Text, H2, Card, CardItem } from 'native-base';
+import { View, StyleSheet, Image } from 'react-native';
 
 export default class Profile extends Component {
     render() {
         return (
+            
             <Container>
-                <Content>
-                    <H2>NAME</H2>
-                    <Thumbnail source={require('../pics/4.png')} />
-                    {/* <Thumbnail source={require('../pics/test.jpg')} />
-                    <Thumbnail large source={require('../pics/4.png')} /> */}
-                </Content>
+                <Content >
+                    <Text> </Text>
+                    <Text> </Text>
+                    <H2>  Name</H2>
+                    <Text> </Text>
+                    <Thumbnail square large source={require('../pics/User.png')} />
+
+               
+                </Content> 
             </Container>
+           
+
         );
     }
 }
+
+

@@ -1,19 +1,29 @@
 import React from 'react';
-import { Container, Header, Left, Body, Right, Button, Icon, Title } from 'native-base';
-import { View ,Text} from 'react-native';
+import { Container, Header, Left, Body, Right, Button, Icon, Title , Card , CardItem, Content  } from 'native-base';
+import { View, Text ,  StyleSheet } from 'react-native';
+import Profile from "../components/Profile"
+import Analysis from "../components/Analysis"
 
 export default class MeScreen extends React.Component {
-    static navigationOptions = {
+  static navigationOptions = {
     title: 'ME',
   };
 
   render() {
     return (
       
-      <View>
       
-        <Text>Hello</Text>
-      </View>
+      <View style={styles.container}>
+      <Profile />
+    <Analysis />
+    </View> 
     );
   }
 }
+const styles = StyleSheet.create({
+  container: {
+      alignItems: 'center',
+      flex: 1,
+      backgroundColor: '#fff',
+  },
+});

@@ -8,27 +8,77 @@ export default class Lesson extends Component {
                     <Card>
                         <CardItem header button >
                             <Text>Lesson 1</Text>
-                            <Text note>    Detail</Text>
+                            <Text note>    ประพจน์</Text>
                         </CardItem>
                     </Card>
                     <Card>
                         <CardItem header button>
                             <Text>Lesson 2</Text>
-                            <Text note>    Detail</Text>
+                            <Text note>    ตรรกศาตร์ภาคแสดง</Text>
                         </CardItem>
                     </Card>
                     <Card>
                         <CardItem header button >
                             <Text>Lesson 3</Text>
-                            <Text note>    Detail</Text>
+                            <Text note>    เทคนิคการพิสูจน์</Text>
                         </CardItem>
                     </Card>
                     <Card>
                         <CardItem header button >
                             <Text>Lesson 4</Text>
-                            <Text note>    Detail</Text>
+                            <Text note>    เซต</Text>
                         </CardItem>
                     </Card>
+                    <Card>
+                        <CardItem header button >
+                            <Text>Lesson 5</Text>
+                            <Text note>    ความสัมพันธ์</Text>
+                        </CardItem>
+                    </Card>
+                    <Card>
+                        <CardItem header button >
+                            <Text>Lesson 6</Text>
+                            <Text note>    ฟังก์ชัน</Text>
+                        </CardItem>
+                    </Card>
+                    <Card>
+                        <CardItem header button >
+                            <Text>Lesson 7</Text>
+                            <Text note>    พื้นฐานการนับ</Text>
+                        </CardItem>
+                    </Card>
+                    <Card>
+                        <CardItem header button >
+                            <Text>Lesson 8</Text>
+                            <Text note>    วิธีอุปนัยเชิงคณิตศาสตร์</Text>
+                        </CardItem>
+                    </Card>
+                    <Card>
+                        <CardItem header button >
+                            <Text>Lesson 9</Text>
+                            <Text note>    การเรียกตัวเอง</Text>
+                        </CardItem>
+                    </Card>
+                    <Card>
+                        <CardItem header button >
+                            <Text>Lesson 10</Text>
+                            <Text note>    การวิเคราะห์บิ๊กโอ</Text>
+                        </CardItem>
+                    </Card>
+                    <Card>
+                        <CardItem header button >
+                            <Text>Lesson 11</Text>
+                            <Text note>    ทฤษฎีกราฟ</Text>
+                        </CardItem>
+                    </Card>
+                    <Card>
+                        <CardItem header button >
+                            <Text>Lesson 12</Text>
+                            <Text note>    ออโตมาตา</Text>
+                        </CardItem>
+                    </Card>
+
+
                 </Content>
             </Container>
         );

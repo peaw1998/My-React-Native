@@ -49,7 +49,7 @@ MeStack.navigationOptions = {
       focused={focused}
       name={Platform.OS === 'ios' ? 'ios-contact' : 'md-contact'}
     />
-    
+
   ),
 };
 
@@ -60,5 +60,5 @@ export default createBottomTabNavigator({
   HomeStack,
   ExerciseStack,
   MeStack,
-  
+
 });
